@@ -9,7 +9,12 @@
   <body>
     <script>
       // 변수(variable): 변하는 데이터(값)를 저장할 수 있는 메모리 공간이다.
-      // var(옛날 방식이라 잘 사용 안 함), let, const -> let, const를 사용하도록 권장함
+      // var(옛날 방식이라 권장하지 않음), let(일반적으로 많이 사용), const -> let, const를 사용하도록 권장함
+      /*
+        var는 변수 재선언 가능 let, const는 변수 재선언이 불가능
+        let은 mutable이고 const는 immutable
+        var는 function-scoped로 hoisting이 되고 ~ (피피티에 있음)
+      */
       //   console.log(3);
       //   console.log(3);
 
@@ -36,7 +41,7 @@
       let d = null;
       console.log(`d=${d}`);
 
-      // Uncaught ReferenceError: e is not defined
+      // Uncaught ReferenceError: e is not defined -> 선언하지 않은 변수를 호출할 때 뜨는 오류
       console.log(`e=${e}`);
     </script>
   </body>
