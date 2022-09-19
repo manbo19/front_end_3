@@ -46,8 +46,16 @@
         console.log("function");
       };
 
-      console.log(`fn=${fn}, ${typeof fn}`);
-      /* fn=function () {console.log("function");}, function */
+      console.log(`fn=${fn}, ${typeof fn}`); //fn=function () {console.log("function");}, function
+
+      let arr = [1, 2, 3];
+      console.log(`arr=${arr}, ${typeof arr}`); // arr=1,2,3, object
+      console.log(`arr=${arr instanceof Array}`); // arr=true
+
+      let customer = { name: "홍길동", age: 30 };
+      console.log(`customer=${customer}, ${typeof customer}`); // customer=[object Object], object
+      console.log(`customer=${customer instanceof Object}`); // customer=true
+      console.log(`${customer.name}, ${customer.age}`); // 홍길동, 30
     </script>
   </body>
 </html>
