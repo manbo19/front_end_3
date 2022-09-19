@@ -32,6 +32,22 @@
 
       let name = null;
       console.log(`name=${name}, ${typeof name}`); // name=null, object
+
+      let loc = new String("node");
+      console.log(`loc=${loc}, ${typeof loc}`); // loc=node, object
+      console.log(`loc=${loc instanceof String}`); // loc=true
+
+      let jumsu = new Number();
+      console.log(`jumsu=${jumsu}, ${typeof jumsu}`); // jumsu=0, object
+      console.log(`jumsu=${jumsu instanceof Number}`); // jumsu=true
+
+      // 변수의 값으로 사용되는 함수는 익명함수로 정의한다.
+      let fn = function () {
+        console.log("function");
+      };
+
+      console.log(`fn=${fn}, ${typeof fn}`);
+      /* fn=function () {console.log("function");}, function */
     </script>
   </body>
 </html>
