@@ -21,7 +21,8 @@
       let a = "javascript";
       console.log(`a=%s`, a);
 
-      let b = true;
+      let b = true; //true, false(소문자)
+      // 논리값을 표현할 때는 대문자를 써선 안 됨. 소문자!
       console.log(`b=${b}`);
 
       let c = 4.58;
@@ -31,6 +32,12 @@
       // https://developer.mozilla.org/ko/docs/Web/API/console
       // chrome에서는 숫자서식이 지원 안 됨
       // console.log(`c=%1f`, c);
+
+      let d = null;
+      console.log(`d=${d}`);
+
+      // Uncaught ReferenceError: e is not defined
+      console.log(`e=${e}`);
     </script>
   </body>
 </html>
