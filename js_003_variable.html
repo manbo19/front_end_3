@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_003_variable.html</title>
+  </head>
+  <body>
+    <script>
+      // 변수(variable): 변하는 데이터(값)를 저장할 수 있는 메모리 공간이다.
+      // var(옛날 방식이라 잘 사용 안 함), let, const -> let, const를 사용하도록 권장함
+      //   console.log(3);
+      //   console.log(3);
+
+      let data = 3; // 변수 선언
+      console.log(`data:%d`, data);
+
+      // 출력 기호: %d(숫자), %f(실수), %s(문자열: 문자와 문자열을 구분하지 않음), %b(논리-> 지원X) => ${}(논리)
+
+      let a = "javascript";
+      console.log(`a=%s`, a);
+
+      let b = true;
+      console.log(`b=${b}`);
+
+      let c = 4.58;
+      // 숫자는 ''를 넣으면 문자열로 인식되기 때문에 정수이든 실수든 따옴표는 빼야함
+      console.log(`c=%f`, c);
+
+      // https://developer.mozilla.org/ko/docs/Web/API/console
+      // chrome에서는 숫자서식이 지원 안 됨
+      // console.log(`c=%1f`, c);
+    </script>
+  </body>
+</html>
