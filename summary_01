@@ -1,5 +1,6 @@
 식별자(identifier): 프로그램 구현에 필요한 이름을 정의- 변수명, 함수명, 클래스명
 변수명, 함수명- 카멜표기법(camel notation)
+클래스명- 파스칼표기법(pascal notation)
 
 변수(variable): 데이터를 저장하기 위한 메모리 공간
 
