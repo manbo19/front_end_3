@@ -57,3 +57,36 @@ console.log(`짝수:${even}`);
 console.log(`홀수:${odd}`);
 
 console.log("===============================");
+
+/*
+continue: 반복문에서 continue을 만나면 현재 반복에서 명령문의 실행을 종료하고 반복문의 처음으로 돌아가 조건식으로 이동한다.
+          특정 조건일 때는 명령문이 실행되지 않아야 할 때 사용
+for(초기식; 조건식; 증감식){continue;}
+while(조건식){continue;}
+*/
+
+for (let i = 1; i <= 10; i++) {
+  if (i % 3 == 0) {
+    continue;
+  }
+  console.log(i);
+}
+
+console.log("===============================");
+
+/*
+중첩반복문
+for(초기값; 조건식; 증감식){
+    for(초기값; 조건식; 증감식){
+        실행문;
+    }
+  }
+*/
+
+for (let i = 1; i <= 3; i++) {
+  for (let j = 1; j <= 3; j++) {
+    // console.log(`i=${i} j=${j}`);
+    process.stderr.write(`i=${i} j=${j},`);
+  }
+  process.stderr.write("\n");
+}
