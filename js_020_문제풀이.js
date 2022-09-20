@@ -28,8 +28,7 @@ console.log("=====문제2=====");
     */
 
 let apple = 123;
-switch (parseInt(apple / 10)) {
-    case 12
+if (parseInt(apple / 10)) {
 }
 console.log(`필요한 바구니의 수: ${i}`);
 // for (i = 1, sum = 0; i <= 123; i++) {
