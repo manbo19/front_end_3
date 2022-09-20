@@ -28,14 +28,37 @@ console.log("=====문제2=====");
     */
 
 let apple = 123;
-if (parseInt(apple / 10)) {
+let basket = "";
+if (apple / 10 <= 1) {
+  basket = 1;
+} else if (apple / 10 <= 2) {
+  basket = 2;
+} else if (apple / 10 <= 3) {
+  basket = 3;
+} else if (apple / 10 <= 4) {
+  basket = 4;
+} else if (apple / 10 <= 5) {
+  basket = 5;
+} else if (apple / 10 <= 6) {
+  basket = 6;
+} else if (apple / 10 <= 7) {
+  basket = 7;
+} else if (apple / 10 <= 8) {
+  basket = 8;
+} else if (apple / 10 <= 9) {
+  basket = 9;
+} else if (apple / 10 <= 10) {
+  basket = 10;
+} else if (apple / 10 <= 11) {
+  basket = 11;
+} else if (apple / 10 <= 12) {
+  basket = 12;
+} else {
+  basket = 13;
 }
-console.log(`필요한 바구니의 수: ${i}`);
-// for (i = 1, sum = 0; i <= 123; i++) {
-//   if (i % 10 == 0) {
-//     console.log(`필요한 바구니의 수: ${i}`);
-//   }
-// }
+
+console.log(`필요한 바구니의 수 : ${basket}`);
+
 console.log("=====문제3=====");
 /*
      [문제3]
@@ -51,13 +74,6 @@ console.log("=====문제3=====");
         
      2. 출력결과
             차량번호의 끝자리가 5인 차량은 금요일 운행을 제한합니다.
-     
-            switch(식){
-    case 값1 : 실행문1; break;
-    case 값2 : 실행문2; break;
-    case 값3 : 실행문3; break;
-    default : 실행문;
-}
     */
 
 let car = 5;
