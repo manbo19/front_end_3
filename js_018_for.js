@@ -90,3 +90,19 @@ for (let i = 1; i <= 3; i++) {
   }
   process.stderr.write("\n");
 }
+
+console.log("===============================");
+
+//https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String
+//이스케이프: 프로그램에서 주변장치를 컨트롤하기 위해서 사용되는 기능
+// \n: 줄바꿈(사용多), \t: 탭, \", \', \b: 백스페이스, \v: 수직탭
+
+//label 정의
+movei: for (let i = 1; i <= 5; i++) {
+  for (let j = 10; j <= 13; j++) {
+    for (let k = 1; k <= 3; k++) {
+      console.log(`i=${i} j=${j} k=${k}`);
+      if (k == 2) break movei;
+    }
+  }
+}
