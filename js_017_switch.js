@@ -69,7 +69,7 @@ let year = 1928;
 let animal = "";
 // console.log(year % 12);
 switch (year % 12) {
-  case 0:
+  case 0: //단일값 but 3+2 이런 건 가능함 근데 굳이.. 범위의 값 X
     animal = "원숭이";
     break;
   case 1:
