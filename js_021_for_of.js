@@ -1,4 +1,4 @@
-// js_022_for_of.js
+// js_021_for_of.js
 
 //for ~ of : element을 가져옴
 let color = ["red", "green", "blue"];
@@ -23,6 +23,6 @@ for (let value of obj) {
 }
 
 /*
-  for ~ of문은 반복 가능한 객체(Array, String, Map, Set, argument)를 반복하는 객체
+  for ~ of문은 반복 가능한 객체(Array, String, Map, Set, arguments)를 반복하는 객체
   즉, iterable 속성을 가진 객체만 가능
 */
