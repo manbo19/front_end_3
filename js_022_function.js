@@ -133,3 +133,32 @@ let call3 = () => console.log("로그인해주세요.");
 console.log(call3); //[Function: call3]
 console.log(call3()); //undefined
 call3(); //로그인해주세요.
+
+///////////////////////////////////////////////////////////////////
+// 다양한 함수 구조
+
+// 중첩함수
+function outer(a, b) {
+  let result = inner(a, b);
+  function inner(a, b) {
+    return a + b;
+  }
+  return result;
+}
+
+console.log(outer(10, 3));
+
+// 콜백함수
+// 1. 다른 함수의 인수로 사용되는 함수
+// 2. 어떤 이벤트에 의해 호출되는 함수: btn.onclick = function(){}
+function callback(a, b) {
+  return a + b;
+}
+
+function getNumber(callFunc) {
+  console.log(`==: ${callFunc}`);
+  let result = callFunc(1, 6);
+  return result;
+}
+
+console.log(getNumber(callback));
