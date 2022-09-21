@@ -28,9 +28,6 @@ console.log("=====문제2=====");
     */
 
 let apple = 123;
-<<<<<<< HEAD
-if ((parseInt(apple / 10)) {
-=======
 let basket = "";
 if (apple / 10 <= 1) {
   basket = 1;
@@ -58,7 +55,6 @@ if (apple / 10 <= 1) {
   basket = 12;
 } else {
   basket = 13;
->>>>>>> 88b404340894e4875771d4b3013221e1ee0f624a
 }
 
 console.log(`필요한 바구니의 수 : ${basket}`);
