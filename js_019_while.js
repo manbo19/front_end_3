@@ -18,6 +18,21 @@ while (j <= 5) {
   j++;
 }
 
+/* ↓ while문은 조건식을 생략할 수 없다.
+
+무한루프로 사용하고 싶다면
+
+while(true){
+  console.log('test');
+} => 보편적으로 사용
+
+or
+
+while(1){
+  console.log('test');
+}
+*/
+
 /*
 - 적어도 한 번 실행함...
 
