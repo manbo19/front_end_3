@@ -17,6 +17,10 @@
     return 값;
  }
 
+ (3) 즉시실행(익명함수) -> 일회성이어요
+     (function(param){
+        console.log(`${param} run~~~`);
+     })('test');
 */
 
 let year = 2012;
@@ -86,3 +90,46 @@ let sum = function (a, b) {
 
 console.log(sum); //[Function: sum]
 console.log(sum(10, 20)); //30
+
+let hap = function (a, b) {
+  console.log(a + b);
+};
+
+console.log(hap); //[Function: hap]
+console.log(hap(10, 30)); //undefined
+hap(10, 30); //40
+
+//ES6 - 화살표 함수
+let sub = (a, b) => {
+  return a + b;
+};
+
+console.log(sub); //[Function: sub]
+console.log(sub(3, 5)); //8
+
+let call = (a, b) => {
+  console.log(a + b);
+};
+
+console.log(call); //[Function: call]
+console.log(call(3, 4)); //undefined
+call(3, 4); //7
+
+// let call2 = (a) => {
+//   return a;
+// };
+
+// parameter(매개 변수)가 한 개이면 소괄호() 생략이 가능하다.
+// return하는 문장만 실행문에 있으면 중괄호{}와 함께 return은 반드시 생략해야 한다. 있으면~~~
+// 생략하려면 다같이 하도록 하쇼 안 그러면 오류가 뜹니다요
+let call2 = (a) => a;
+
+console.log(call2); //[Function: call2]
+console.log(call2(3)); //3
+
+//매개 변수가 없으면 소괄호() 생략이 불가능하다. 반드시 기입~~~!
+let call3 = () => console.log("로그인해주세요.");
+
+console.log(call3); //[Function: call3]
+console.log(call3()); //undefined
+call3(); //로그인해주세요.
