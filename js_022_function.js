@@ -50,7 +50,8 @@ if (result) {
 
 //함수 정의
 function add(a, b) {
-  return a + b;
+  console.log(`a=${a}, b=${b}`);
+  return a + b; // + : (1)산술기호 (2)문자열 연결
 }
 
 function add2(a, b, c) {
@@ -60,7 +61,28 @@ function add2(a, b, c) {
 //함수 호출
 console.log(add(2, 3)); //5
 console.log(add2(2, 3, 4)); //9
-console.log(add()); //NaN
+console.log(add()); //NaN(Not a Number)
 console.log(add(1)); //NaN
+console.log(add(1, "script")); //1script
+console.log(add(1, null)); //1
 console.log(add(1, 2, 3, 4, 5)); //3
-console.log(add3());
+// console.log(add3()); //ReferenceError: add3 is not defined
+// add(5, 7);
+
+function hello(name) {
+  console.log(`${name}님 환영합니다.`);
+}
+
+hello("홍길동");
+console.log(hello("고수")); //변수를 선언하고 값을 할당하지 않은 경우 undefined
+
+///////////////////////////////////////////////////////////////////////////////
+//함수 표현식
+
+//ES5 - 익명함수
+let sum = function (a, b) {
+  return a + b;
+};
+
+console.log(sum); //[Function: sum]
+console.log(sum(10, 20)); //30
