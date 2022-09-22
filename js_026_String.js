@@ -112,10 +112,31 @@ let position = data.indexOf("blue");
 //31 -> 2번째 'blue'의 인덱스값을 가져옴
 console.log(data.indexOf("blue", position + 1));
 
+// data = "Mr Blue has a blue house and a blue car";
+// let pos = -1;
+// do {
+//   pos = pos + 1;
+//   pos = data.indexOf("blue", pos);
+//   if (pos != -1) console.log(pos);
+// } while (pos != -1);
+
+// ↳ for문으로 바꾸기
 data = "Mr Blue has a blue house and a blue car";
-let pos = -1;
-do {
-  pos = pos + 1;
-  pos = data.indexOf("blue", pos);
-  if (pos != -1) console.log(pos);
-} while (pos != -1);
+for (let i = 0; i < data.length; i += 1) {
+  i = data.indexOf("blue", i);
+  if (i == -1) break;
+  console.log(i);
+}
+
+/* repeat() */
+let text = "korea";
+console.log(text.repeat(10));
+
+text = "*";
+console.log(text.repeat(10));
+
+let text2 = "  korea   data ";
+//15
+console.log(text2.length);
+//12
+console.log(text2.trim().length); //trim은 공백 지워줌(문자열 사이의 공백은 제거 안 됨)
