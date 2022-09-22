@@ -9,6 +9,14 @@ protocal: http, domain: www.daum.net
 protocal: ftp, domain: ftp.microsoft.com
 */
 
+data = "http://www.daum.net";
+let arr = data.split("://");
+for (let i of arr) console.log(i);
+
+data = "ftp://ftp.microsoft.com";
+let arr2 = data.split("://");
+for (let i of arr2) console.log(i);
+
 //[출력결과]를 참고하여 separator함수를 구현하세요.
 function separator(data) {}
 
