@@ -128,7 +128,7 @@ for (let i = 0; i < data.length; i += 1) {
   console.log(i);
 }
 
-/* repeat() */
+/* repeat(): 반복해줌 */
 let text = "korea";
 console.log(text.repeat(10));
 
