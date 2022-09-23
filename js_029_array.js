@@ -65,6 +65,8 @@ console.log(fruits); //[ 'Apple', 'Banana', 'Kiwi', 'Mango', 'Orange' ] -> 원�
 //내림차순 정렬 -> reverse 해주면 됨!
 console.log(fruits.sort().reverse()); //[ 'Orange', 'Mango', 'Kiwi', 'Banana', 'Apple' ]
 
+//javascript에서 sort()는 Tim sort 알고리즘을 사용한다.
+//Tim sort는 Insertion sort와 Merge sort를 결합하여 만든 정렬이다.
 let point = [40, 100, 1, 5, 10];
 console.log(point.sort()); //[ 1, 10, 100, 40, 5 ] -> 제일 앞에 있는 것을 기준으로 정렬됨
 

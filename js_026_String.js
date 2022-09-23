@@ -17,7 +17,7 @@ data = "Apple, Banana, Kiwi";
 
 //Banana
 console.log(`substring: ${data.substring(7, 13)}`); // 7인덱스부터 13인덱스 미만
-//substring()은 음수값을 지원하지 않는다.
+//substring()은 음수값을 지원하지 않는다. 역으로 할 수 없음!
 console.log(`substring: ${data.substring(-12, -6)}`);
 
 //Banana
