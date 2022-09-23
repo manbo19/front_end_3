@@ -67,14 +67,37 @@ console.log(fruits.sort().reverse()); //[ 'Orange', 'Mango', 'Kiwi', 'Banana', '
 
 //javascript에서 sort()는 Tim sort 알고리즘을 사용한다.
 //Tim sort는 Insertion sort와 Merge sort를 결합하여 만든 정렬이다.
+//Tim sort 알고리즘: https://d2.naver.com/helloworld/0315536
 let point = [40, 100, 1, 5, 10];
 console.log(point.sort()); //[ 1, 10, 100, 40, 5 ] -> 제일 앞에 있는 것을 기준으로 정렬됨
 
-//문자열 대신 숫자를 비교하기 위해 a-b -> 배열을 오름차순으로 정렬
-//[ 1, 5, 10, 40, 100 ] -> 오름차순으로 정렬함
+//오름차순
+//[ 1, 5, 10, 40, 100 ]
 console.log(
   point.sort(function (a, b) {
     console.log(`a: ${a}, b: ${b}, a-b: ${a - b}`);
     return a - b;
   })
 );
+
+//내림차순
+//[ 100, 40, 10, 5, 1 ]
+console.log(
+  point.sort(function (a, b) {
+    //   console.log(`a: ${a}, b: ${b}, a-b: ${a - b}`);
+    return b - a;
+  })
+);
+
+let xData = [1, 2, 3];
+let yData = [4, 5, 6];
+let zData = xData.concat(yData, [7, 8, 9]); //concat(): 문자열이 연결됨 -> 인자값으로 여러 개 넣을 수 있음
+console.log(zData.length); //9
+console.log(zData); //[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+let arr = [1, 3, [[[4, 5]]], [7, 8], [[9, 10], 12]];
+console.log(arr.flat()); //[ 1, 3, [ [ 4, 5 ] ], 7, 8, [ 9, 10 ], 12 ] -> 원래 배열에 저장된 값 변경 안 됨
+console.log(arr); //[ 1, 3, [ [ [Array] ] ], [ 7, 8 ], [ [ 9, 10 ], 12 ] ]
+console.log(arr.flat(1)); //[ 1, 3, [ [ 4, 5 ] ], 7, 8, [ 9, 10 ], 12 ] -> 아무것도 지정 안 한 거랑 같음
+console.log(arr.flat(2)); //[ 1, 3, [ 4, 5 ], 7, 8, 9, 10, 12 ]
+console.log(arr.flat(3)); //[1, 3, 4, 5, 7, 8, 9, 10, 12]
