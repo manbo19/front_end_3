@@ -1,4 +1,5 @@
-let btn = document.querySelector("#btn");
+let btn = document.getElementsByTagName("button")[0];
+
 btn.onclick = () => {
   let date = new Date();
   console.log(
