@@ -63,3 +63,21 @@ console.log(divChildren);
 console.log(divChildren[0]); //<p id="p1">content1</p>
 console.log(divChildren.item(0)); //<p id="p1">content1</p>
 console.log(divChildren.namedItem("p1")); //<p id="p1">content1</p>
+
+//////////////////////////////////////////////////
+//firstChild, firstElementChild
+let pNode = document.getElementById("p4");
+let aNode = pNode.firstChild;
+console.log(aNode);
+
+aNode = pNode.firstElementChild;
+//<img src="images/gosu.jpg" alt="영화배우 고수">
+console.log(aNode);
+
+let aAttrNode = aNode.getAttribute("src");
+//images/gosu.jpg
+console.log(aAttrNode);
+
+aAttrNode = aNode.src;
+//http://127.0.0.1:5500/images/gosu.jpg
+console.log(aAttrNode);
