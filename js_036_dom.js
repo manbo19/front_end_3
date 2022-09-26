@@ -68,12 +68,15 @@ console.log(divChildren.namedItem("p1")); //<p id="p1">content1</p>
 //firstChild, firstElementChild
 let pNode = document.getElementById("p4");
 let aNode = pNode.firstChild;
+//#text
 console.log(aNode);
 
 aNode = pNode.firstElementChild;
 //<img src="images/gosu.jpg" alt="영화배우 고수">
 console.log(aNode);
 
+//////////////////////////////////////////////////
+// 객체.getAttribute("속성명"), 객체.setAttribute("속성명","값")
 let aAttrNode = aNode.getAttribute("src");
 //images/gosu.jpg
 console.log(aAttrNode);
@@ -81,3 +84,9 @@ console.log(aAttrNode);
 aAttrNode = aNode.src;
 //http://127.0.0.1:5500/images/gosu.jpg
 console.log(aAttrNode);
+
+aNode.setAttribute("title", "스타배우");
+console.log(aNode.getAttribute("title"));
+
+aNode.id = "imgGosu";
+console.log(aNode.id);
