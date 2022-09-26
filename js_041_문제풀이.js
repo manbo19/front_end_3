@@ -6,3 +6,4 @@ btn.onclick = () => {
     `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}  ${date}`
   );
 };
+document.getElementById("test").innerHTML = "출력";
