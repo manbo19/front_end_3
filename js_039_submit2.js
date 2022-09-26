@@ -1,6 +1,7 @@
-//document.log_f.onsubmit = function () {}
+//<input type="button" value="login" id="btn" />
 
-document.log_f.onsubmit = () => {
+let btn = document.querySelector("#btn");
+btn.onclick = () => {
   let idNode = document.querySelector("#my_id");
   let passNode = document.querySelector("#my_pass");
 
@@ -13,4 +14,7 @@ document.log_f.onsubmit = () => {
     alert("비밀번호를 입력하세요.");
     return false;
   }
+
+  //강제적으로 submit() 이벤트 발생시킴
+  document.log_f.submit();
 };
