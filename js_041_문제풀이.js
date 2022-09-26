@@ -1,10 +1,7 @@
-let date = new Date();
-console.log(date);
-
-let btn = document.getElementsByTagName("button")[0];
-btn.onclick = process;
-
-function process() {
+let btn = document.querySelector("#btn");
+btn.onclick = () => {
   let date = new Date();
-  console.log(date);
-}
+  console.log(
+    `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}  ${date}`
+  );
+};
