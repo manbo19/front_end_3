@@ -1,9 +1,14 @@
-let btn = document.getElementsByTagName("button")[0];
+let dateBtnNode = document.getElementsByTagName("button")[0];
+dateBtnNode.onclick = () => {
+  let pNode = document.getElementsByTagName("p"[0]);
 
-btn.onclick = () => {
-  let date = new Date();
-  console.log(
-    `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}  ${date}`
-  );
+  let today = new Date();
+  let year = today.getFullYear();
+  let month = today.getMonth() + 1;
+  let date = today.getDate();
+  let hour = today.getHours();
+  let minute = today.getMinutes();
+  let second = today.getSeconds();
+
+  pNode.innerText = `${year}-${month}-${date} ${hour}:${minute}:${second}`;
 };
-document.getElementById("test").innerHTML = "출력";

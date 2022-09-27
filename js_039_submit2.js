@@ -16,6 +16,6 @@ btn.onclick = () => {
   }
 
   //document.log_f.action = "js_039_submit.js";
-  //강제적으로 submit() 이벤트 발생시킴
+  //강제적으로 submit() 이벤트 발생시킨다
   document.log_f.submit();
 };
