@@ -19,9 +19,11 @@ function carCount() {
   console.log(this.id);
 
   /* defaultValue는 <input>에 초기에 입력된 value의 값을 기억해 가져온다. */
-  let basicCar = Number(totalCar.defaultValue);
+  basicCar = Number(totalCar.defaultValue);
 
-  if (this.checked) basicCar += Number(this.value);
+  myChb.map((element) => {
+    if (element.checked) basicCar += Number(element.value);
+  });
 
   totalCar.value = basicCar;
 }
