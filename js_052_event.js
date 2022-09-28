@@ -1,5 +1,6 @@
 let btn = document.querySelector("button");
 
+console.log("start");
 btn.addEventListener(
   "click",
   function () {
@@ -7,3 +8,5 @@ btn.addEventListener(
   },
   false
 );
+
+console.log("end");
