@@ -87,3 +87,11 @@ li {
   line-height: 50px;
   text-align: center;
 }
+
+/* 서브 메뉴 */
+.gnb ol {
+  height: 0;
+  overflow: hidden;
+}
+
+/* display:none, visibility: hidden, overflow: hidden 구분하기*/
