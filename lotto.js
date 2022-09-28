@@ -14,5 +14,8 @@ for (var i = 0; i < 6; i++) {
 
   result.push(num);
 }
-
 console.log("결과", result);
+
+// for (var i = 0; i < 6; i++) {
+//   document.write(result[i]);
+// }

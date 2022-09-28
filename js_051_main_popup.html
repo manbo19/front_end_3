@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_051_main_popup.html</title>
+    <style>
+      #popup {
+        width: 301px;
+        height: 351px;
+        border: 1px solid black;
+        position: fixed;
+        left: 30%;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        프랑스 현대 문단의 블록버스터(『르 누벨 옵세바퇴르』), 아멜리 노통브의
+        신작 『샴페인 친구』가 이상해 번역으로 열린책들에서 출간되었다. 이
+        작품은 [잔인함과 섬뜩한 유머를 표현하는 노통브만의 특별한 재능이 빛을
+        발하는 소설]이라는 평과 함께 문단과 서점의 열광적인 반응을 이끌어 냈다.
+        이 책 『샴페인 친구』는 1997년, 30세 젊은 작가 노통브가 자신의 책
+        『사랑의 파괴』(1993) 사인회에서 만나게 된 페트로니유라는 22세 여성
+        팬과의 우정 이야기다. 아멜리 노통브는 샴페인을 좋아하지만, 혼자 마시기를
+        즐기지는 않는다. 그래서 술친구로 삼을 만한 사람을 찾아 나선다. 자신의
+        사인회를 찾아온 열다섯 불량소년처럼 생긴 페트로니유를 본 순간, 노통브는
+        직감한다. 페트로니유가 자신이 그동안 찾던 바로 그 사람이란 것을! 작가가
+        되고 싶었던 페트로니유는 그동안 집필한 원고들을 아멜리 노통브에게 보여
+        주고, 두 사람은 문학과 샴페인이라는 관심사를 공유하며 꾸준히 어울린다.
+        샴페인에 취해 각종 사고를 벌이면서…. 노상 방뇨를 시작으로, 파리의 리츠
+        호텔에서 열린 샴페인 시음회를 망치는가 하면, 크리스마스이브 날 파리
+        교외에 사는 페트로니유의 공산당원 부모님 댁에 쳐들어가고, 스틱 대신
+        샴페인 병을 쥐고 스키를 타기도 한다. 2006년, 페트로니유는 사하라
+        사막으로 긴 여행을 떠나기 전 중요한 원고를 노통브에게 맡긴다. 수십 번
+        거절당했던 페트로니유의 원고는 2007년에 드디어 출간되고, 페트로니유도
+        인정받는 작가가 된다. 작가가 된 페트로니유와 노통브 사이에 경쟁 구도가
+        생기고, 페트로니유의 태도가 이상해지며 두 친구 사이에 거리감이 생긴다.
+        값비싼 샴페인을 곁들인 파티가 이어지는 가운데 2014년, 두 사람에게 지독한
+        숙취가 찾아온다.
+      </p>
+      <div id="popup"><img src="images/popup.jpg" usemap="#pop" /></div>
+      <map name="pop" id="pop">
+        <area shape="rect" coords="255,332,290,345" href="#" alt="창닫기" />
+      </map>
+    </div>
+    <script>
+      let close = document.querySelector("map#pop area");
+      close.onclick = () => {
+        let popup = document.querySelector("div#popup");
+        popup.style.width = "0px";
+        popup.style.height = "0px";
+        popup.style.visibility = "hidden";
+      };
+    </script>
+  </body>
+</html>
