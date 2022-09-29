@@ -19,3 +19,29 @@ setInterval(function () {
     tg.style.transition = "none";
   }, 600); // 0.06초
 }, 3000); // 3초
+
+/////////////////////////////////////////////////
+//공지사항 및 갤러리 구현
+function chgTab(i1, i2) {
+  //i1: class를 넣을 li순번
+  //i2: class를 뺄 li순번
+
+  let tm = document.querySelectorAll(".tm>li");
+  let tc = document.querySelectorAll(".tc>li");
+
+  //on클래스 넣기
+  tm[i1].classList.add("on");
+  tc[i1].classList.add("on");
+
+  //on클래스 빼기
+  tm[i2].classList.remove("on");
+  tc[i2].classList.remove("on");
+}
+
+/////////////////////////////////////////////////
+//팝업창 닫기
+
+function popup(sts) {
+  let pop = document.querySelector(".pop");
+  pop.style.display = sts;
+}

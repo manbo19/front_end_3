@@ -204,3 +204,62 @@ li {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.gong span {
+  float: right;
+  padding-right: 5px;
+}
+
+/* 갤러리 리스트 */
+.gal li {
+  margin: 18px 12px;
+}
+
+.gal img {
+  width: 100px;
+  border: 1px solid #777;
+}
+
+/* 배너 및 바로가기 이미지 */
+.im {
+  width: 100%;
+  height: 100%;
+}
+
+/*============================================*/
+/*                   Footer                   */
+.info1 {
+  width: 200px;
+}
+
+.info2 {
+  width: 800px;
+  text-align: center;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+.info3 {
+  width: 200px;
+  text-align: center;
+  line-height: 107px;
+}
+
+/*===========================================*/
+/*                   팝업창                   */
+
+.pop {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+
+  width: 350px;
+  padding: 15px;
+  z-index: 999;
+  background-color: rgb(186, 217, 64);
+  border: 3px solid #888;
+}
+
+.bbx {
+  text-align: right;
+}
